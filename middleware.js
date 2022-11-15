@@ -1,9 +1,7 @@
 import {NextResponse} from "next/server";
 
 import {getDynamicYieldCampaign} from "./lib/dynamicYield";
-
-export const USER_COOKIE = '_dyid_server'
-export const SESSION_COOKIE = '_dyjsession'
+import {SESSION_COOKIE, USER_COOKIE} from "./lib/constants";
 
 export const CAMPAIGNS = {
     '/static-campaign': {
