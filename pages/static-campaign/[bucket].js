@@ -1,5 +1,5 @@
 const Page = ({bucket}) => {
-    return <h1>You're in bucket: {bucket}</h1>
+    return <h1>You&apos;re in bucket: {bucket}</h1>
 }
 
 export const getStaticProps = async ({params}) => {
