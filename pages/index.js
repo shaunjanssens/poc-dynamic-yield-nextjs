@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from "next/link";
 import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
@@ -18,33 +19,33 @@ export default function Home() {
                 </h1>
 
                 <div className={styles.grid}>
-                    <a href="/static-campaign" className={styles.card}>
+                    <Link href="/static-campaign" className={styles.card}>
                         <h2>Static &rarr;</h2>
-                        <p>Find in-depth information about Next.js features and API.</p>
-                    </a>
+                        <p>Static generated page with middleware and Dynamic Yield</p>
+                    </Link>
 
-                    <a href="/dynamic-campaign" className={styles.card}>
+                    <Link href="/dynamic-campaign" className={styles.card}>
                         <h2>Dynamic &rarr;</h2>
-                        <p>Learn about Next.js in an interactive course with quizzes!</p>
-                    </a>
+                        <p>Severside rendered page with Dynamic Yield</p>
+                    </Link>
 
-                    <a
+                    <Link
                         href="/contentful-campaign"
                         className={styles.card}
                     >
                         <h2>Contentful &rarr;</h2>
-                        <p>Discover and deploy boilerplate example Next.js projects.</p>
-                    </a>
+                        <p>Serverside rendered Contentful posts with personalised block</p>
+                    </Link>
 
-                    <a
+                    <Link
                         href="/recommendations-campaign"
                         className={styles.card}
                     >
                         <h2>Recommendations &rarr;</h2>
                         <p>
-                            Instantly deploy your Next.js site to a public URL with Vercel.
+                            Serverside rendered products from Dynamic Yield
                         </p>
-                    </a>
+                    </Link>
                 </div>
             </main>
 
