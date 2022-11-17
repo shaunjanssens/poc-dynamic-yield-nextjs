@@ -18,18 +18,18 @@ export default function Home() {
                 </h1>
 
                 <div className={styles.grid}>
-                    <a href="https://nextjs.org/docs" className={styles.card}>
+                    <a href="/static-campaign" className={styles.card}>
                         <h2>Static &rarr;</h2>
                         <p>Find in-depth information about Next.js features and API.</p>
                     </a>
 
-                    <a href="https://nextjs.org/learn" className={styles.card}>
+                    <a href="/dynamic-campaign" className={styles.card}>
                         <h2>Dynamic &rarr;</h2>
                         <p>Learn about Next.js in an interactive course with quizzes!</p>
                     </a>
 
                     <a
-                        href="https://github.com/vercel/next.js/tree/canary/examples"
+                        href="/contentful-campaign"
                         className={styles.card}
                     >
                         <h2>Contentful &rarr;</h2>
@@ -37,9 +37,7 @@ export default function Home() {
                     </a>
 
                     <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/recommendations-campaign"
                         className={styles.card}
                     >
                         <h2>Recommendations &rarr;</h2>
