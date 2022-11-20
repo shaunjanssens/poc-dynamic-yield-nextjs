@@ -20,7 +20,7 @@ const Page = ({products, getProductsTime}) => {
                 return (
                     <li key={product.id}>
                         <div>
-                            <Image src={product.media.find(({type}) => type === 'Packshot').url} alt={product.name}
+                            <Image src={product.image} alt={product.name}
                                    width={200}
                                    height={200}
                                    loader={contentfulImageLoader}
