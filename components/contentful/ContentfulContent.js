@@ -17,6 +17,7 @@ const ContentfulContent = ({content, campaigns}) => {
                                 <h3>{fields.title}</h3>
                                 <p>Campaign name: <strong>{fields.campaignName}</strong></p>
                                 {fields.blocks.map(block => {
+                                        // Check if block is active variant
                                         if (block.sys.id === campaign?.variant.data.entryId) {
                                             return (
                                                 <Fragment key={block.sys.id}>
